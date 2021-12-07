@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --themeColor: #ba4444;
+    --pageWidth: 5rem 3rem;
+    --typeFontSize: 0.9rem;
+}
+
+/* Utilities */
+.page-width {
+    padding: var(--pageWidth);
+}
+
+/* Index Page styling starts here */
+.strip {
+    position: relative;
+    height: 80px;
+    background-color: var(--themeColor);
+}
+
+.strip>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.strip>.text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.strip .text-box span:first-child {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.strip .text-box span:nth-child(2) {
+    color: #fff;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.trending-products .row:first-child a {
+    color: #000;
+}
+
+.card {
+    border: none;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img>img {
+    height: 100%;
+    width: 200px;
+}
+
+.card>a>.card-body>.card-title {
+    font-size: var(--typeFontSize);
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 600;
+}
+
+.card>a>.card-body>.price {
+    font-weight: 600;
+    margin: 0;
+}
+
+.featured-collection .card .card-body .card-title {
+    text-align: center;
+}
+
+.featured-collection .card a .card-img img {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.featured-collection .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
+    max-width: 100%;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.featured-collection .grid .grid-items {
+    min-height: 200px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-collection .grid .grid-items img {
+    width: 150px;
+}
+
+.hero .row .hero-bg {
+    background-image: url(../images/paper_1080x.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .hero-text p:nth-child(1) {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.hero .hero-text h3 {
+    font-size: 3rem;
+}
+
+.hero .hero-text>.subtitle {
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+.shop .card .card-body .card-title {
+    font-weight: 600;
+}
+
+.shop .card .card-body .card-text {
+    font-weight: 400;
+    color: #4b4b4b;
+}
+
+.trending-products .post-title {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.trending-products .latest a {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.trending-products .latest a:last-child {
+    margin-bottom: 0;
+}
+
+.trending-products .latest a img {
+    width: 100%;
+    flex: 0 0 40%;
+}
+
+.trending-products .latest a p {
+    padding-left: 20px;
+    flex: 0 0 60%;
+}
+
+/* Index Page styling ends here */
