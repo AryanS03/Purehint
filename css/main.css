@@ -16,6 +16,11 @@ body {
     overflow-x: hidden;
 }
 
+::selection {
+    background-color: #111212;
+    color: #fff;
+}
+
 :root {
     --themeColor: #ba4444;
     --pageWidth: 5rem 3rem;
@@ -23,8 +28,61 @@ body {
 }
 
 /* Utilities */
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+select {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+}
+
+select:focus-visible {
+    outline: none;
+}
+
+option {
+    color: black;
+    background-color: white;
+}
+
+.form-check-label {
+    cursor: pointer;
+}
+
 .page-width {
     padding: var(--pageWidth);
+}
+
+.accordion .accordion-item {
+    border: none;
+}
+
+.accordion .accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    color: black;
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+.form-check-input:focus {
+    border-color: #000;
+    box-shadow: none;
+}
+
+.form-check-input:checked {
+    border-color: #000;
+    background-color: #000;
 }
 
 /* Index Page styling starts here */
@@ -191,3 +249,13 @@ body {
 }
 
 /* Index Page styling ends here */
+/* Product Page styling starts here */
+.sidebar {
+    position: sticky;
+    top: 90px;
+}
+
+/* Range  Slider Styling starts here */
+
+/* Range  Slider Styling ends here */
+/* Product Page styling ends here */
